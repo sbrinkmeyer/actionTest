@@ -26,7 +26,8 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    # set the environment based on branch
+    # set the environment based on branch will either be the
+    #  uat environment, or just the default one.
     environment: ${{ github.ref == 'refs/heads/uat' && 'uat' || 'default' }}
 
 
